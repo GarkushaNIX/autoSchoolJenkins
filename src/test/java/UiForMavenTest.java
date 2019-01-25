@@ -11,7 +11,7 @@ public class UiForMavenTest {
 
     @Test
     public void testAmazon() {
-        WebDriver driver = new RemoteWebDriver(toUrl("http://localhost:4444/wd/hub"), DesiredCapabilities.chrome());
+        WebDriver driver = new RemoteWebDriver(toUrl("http://localhost:4445/wd/hub"), DesiredCapabilities.chrome());
         driver.manage().window().maximize();
         driver.get("https://www.amazon.com");
 
@@ -27,7 +27,7 @@ public class UiForMavenTest {
 
     @Test
     public void testApple() {
-        WebDriver driver = new RemoteWebDriver(toUrl("http://localhost:4444/wd/hub"), DesiredCapabilities.chrome());
+        WebDriver driver = new RemoteWebDriver(toUrl("http://localhost:4445/wd/hub"), DesiredCapabilities.chrome());
         driver.manage().window().maximize();
         driver.get("https://pn.com.ua");
 
